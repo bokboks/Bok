@@ -5,7 +5,14 @@
     <ImplicitUsings>disable</ImplicitUsings>
     <Nullable>disable</Nullable>
     <IsPackable>true</IsPackable>
-  </PropertyGroup>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>0.0.1</Version>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+</PropertyGroup>
+
+<ItemGroup>
+    <None Include="..\readme.md" Pack="true" PackagePath="\"/>
+</ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Threading.Analyzers" Version="17.7.30" />
     <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.4" />

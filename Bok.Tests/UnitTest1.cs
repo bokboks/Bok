@@ -1,6 +1,6 @@
 using System.Drawing;
 
-namespace Bok.tests;
+namespace Bok.Tests;
 
 //Mock an interface with default values
 public abstract class BaseProperties<T> where T : class, IPet
@@ -226,7 +226,7 @@ public class InheritedProperties1 : BaseProperties<IDog>
 {
     protected override void Setup()
     {
-        Proxy = bok.Mock<IDog>.Create();
+        Proxy = Mock<IDog>.Create();
         Mock = Proxy.Instance;
     }
 }
@@ -234,7 +234,7 @@ public class InheritedProperties2 : BaseProperties<IPoodle>
 {
     protected override void Setup()
     {
-        Proxy = bok.Mock<IPoodle>.Create();
+        Proxy = Mock<IPoodle>.Create();
         Mock = Proxy.Instance;
     }
 }
@@ -243,7 +243,7 @@ public class InheritedInterfaceProperties3 : BaseProperties<IRat>
     protected override void Setup()
     {
         // Test all properties inherited a few levels down
-        Proxy = bok.Mock<IRat>.Create();
+        Proxy = Mock<IRat>.Create();
         Mock = Proxy.Instance;
     }
 }
@@ -254,7 +254,7 @@ public class InheritedClassProperties1 : BaseProperties<IDog>
     {
         // Wrap + Defaults should replace all methods with default responses
         var dog = new Dog();
-        Proxy = bok.Mock<IDog>.Wrap(dog).Defaults();
+        Proxy = Mock<IDog>.Wrap(dog).Defaults();
         Mock = Proxy.Instance;
     }
 }
@@ -295,7 +295,7 @@ public class WrapClassProperties1 : BaseProperties<IDog>
     {
         // Wrap should return the Dog implementation responses
         var dog = new Dog();
-        Proxy = bok.Mock<IDog>.Wrap(dog);
+        Proxy = Mock<IDog>.Wrap(dog);
         Mock = Proxy.Instance;
     }
 
