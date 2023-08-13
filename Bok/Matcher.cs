@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 
-namespace bok;
+namespace Bok;
 
 public class Matcher
 {

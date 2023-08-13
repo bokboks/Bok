@@ -1,6 +1,6 @@
 ﻿using System.Security.Cryptography;
 
-namespace bok;
+namespace Bok;
 
 public interface IMock<T> where T : class
 {

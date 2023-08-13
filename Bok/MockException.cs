@@ -1,4 +1,4 @@
-namespace bok;
+namespace Bok;
 
 public class MockException : System.Exception
 {

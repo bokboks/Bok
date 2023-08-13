@@ -1,6 +1,6 @@
 using System.Drawing;
 
-namespace bok.tests;
+namespace Bok.tests;
 
 //Mock an interface with default values
 public abstract class BaseProperties<T> where T : class, IPet

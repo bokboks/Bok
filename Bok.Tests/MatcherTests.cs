@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace bok.tests;
+namespace Bok.tests;
 
 public class MatcherMatches
 {
