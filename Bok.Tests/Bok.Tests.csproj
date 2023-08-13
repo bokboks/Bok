@@ -10,7 +10,7 @@
   </PropertyGroup>
 
 <ItemGroup>
-    <ProjectReference Include="..\bok\bok.csproj" />
+    <ProjectReference Include="..\Bok\Bok.csproj" />
   </ItemGroup>
 
   <ItemGroup>
