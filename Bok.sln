@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bok", "Bok\Bok.csproj", "{2F3F98A2-602B-4B40-B6C8-EBF29179D86D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bok.Tests", "bok.tests\Bok.Tests.csproj", "{7E4DFAAE-DED8-40EC-A7A6-F4E1C0EE4BE2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bok.Tests", "Bok.Tests\Bok.Tests.csproj", "{7E4DFAAE-DED8-40EC-A7A6-F4E1C0EE4BE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
