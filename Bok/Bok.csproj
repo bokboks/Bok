@@ -8,9 +8,10 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Version>0.0.1</Version>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
 </PropertyGroup>
-
-<ItemGroup>
+<ItemGroup>  
+  <None Include="..\icon.png" Pack="true" PackagePath="\"/>
     <None Include="..\readme.md" Pack="true" PackagePath="\"/>
 </ItemGroup>
   <ItemGroup>
